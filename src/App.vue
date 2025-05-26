@@ -17,8 +17,9 @@ import Swiper from './components/main/Swiper.vue';
           <PromotionCard image="https://cdn.zabbet.com/0VNF/lobby_settings/8c6c6e91-0c11-469a-b46b-937f3c168dea.png" title="กิจกรรม" description="กิจกรรมตลอด 24 ชั่วโมง" />
           <PromotionCard image="https://cdn.zabbet.com/0VNF/lobby_settings/b2082a32-6963-4333-ad94-b662c8e8647f.png" title="ข่าวสาร" description="ข่าวสารที่คุณไม่ควรพลาด" />
         </div>
+        <div class="h-[1000px]"></div>
       </div>
-      <div class="w-[25%]">
+      <div class="w-[25%] sticky h-fit top-[124px]">
         <div class="px-[10px] py-[12px] relative">
           <div class="absolute left-0 right-0 top-0 h-[150px]" style="background: radial-gradient(circle at 50% -30%, rgb(18, 255, 32) 0%, rgba(7, 29, 70, 0) 60%); border-top-right-radius: 25px; border-top-left-radius: 25px;"></div>
           <div class="h-[30px] flex items-center gap-4 w-full relative overflow-hidden rounded-md pl-4">
