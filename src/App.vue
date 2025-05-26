@@ -1,14 +1,9 @@
 <script setup>
-import GradientBtn from './components/atoms/GradientBtn.vue';
-import PrimaryDarkBtn from './components/atoms/PrimaryDarkBtn.vue';
-import PrimaryLightBtn from './components/atoms/PrimaryLightBtn.vue';
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/main/Navbar.vue';
 </script>
 
 <template>
-  <PrimaryLightBtn text="Login" />
-  <PrimaryDarkBtn text="Register" />
-  <GradientBtn />
+  <Navbar />
 </template>
 
 <style scoped>

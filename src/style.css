@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
 
 @theme {
+  --color-secondary-black: rgb(3, 23, 45);
 }
 
 body {
   font-family: "Noto Sans Thai", sans-serif;
+  background-color: black;
 }
 
 .green-light-to-dark {
