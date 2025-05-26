@@ -1,7 +1,7 @@
 <template >
-    <div class="fixed top-0 left-0 w-full z-[10000] h-[108px]">
+    <div class="fixed top-0 bg-black left-0 w-full z-[10000] h-[108px]">
         <div class="max-w-[1400px] mx-auto">
-            <div class=" flex items-center py-2 justify-between"> 
+            <div class=" flex  items-center py-2 justify-between"> 
                 <div class="flex items-center  gap-2.5">
                     <img class="w-[140px]" src="https://cdn.zabbet.com/0VNF/lobby_settings/8e561d6d-916e-4647-a060-769b671aaa4a.png" alt="">
                     <div class="p-2 bg-secondary-black flex items-center justify-center rounded-full cursor-pointer">
