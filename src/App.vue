@@ -14,6 +14,9 @@ import Five from "./components/icons/Five.vue";
 import Six from "./components/icons/Six.vue";
 import Seven from "./components/icons/Seven.vue";
 import Eight from "./components/icons/Eight.vue";
+import GreenToDarkGradientContainer from "./components/atoms/GreenToDarkGradientContainer.vue";
+import ReviewSlider from "./components/main/ReviewSlider.vue";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const paginationConfig = {
   clickable: true,
@@ -21,13 +24,18 @@ const paginationConfig = {
     return `<div class="${className} !w-[24px] !h-[9px] !rounded-[6px] " style="box-shadow:rgb(0,0,0) 0px 0px 5px;background:rgb(255, 255, 255)"></div>`;
   },
 };
+
+const modules = {
+  Pagination,
+  Autoplay,
+};
 </script>
 
 <template>
   <Container>
     <Navbar />
     <div class="mt-[150px]">
-      <Swiper slides-per-view="1.9">
+      <Swiper slides-per-view="1.9" :navigation="false" :modules="modules">
         <swiper-slide>
           <img
             class="w-full h-full object-cover rounded-lg"
@@ -191,46 +199,20 @@ const paginationConfig = {
                 ></div>
               </div>
               <div class="h-[40px] relative w-full overflow-hidden mb-5">
-                <div
-                  class="relative w-full h-[38px] overflow-hidden rounded-[6px]"
+                <GreenToDarkGradientContainer
+                  image="https://alpha7s.online/images/home/star.png"
+                  text="ไฮไลท์"
                 >
-                  <div
-                    class="top-0 left-0 w-[100%] h-[38px] opacity-[0.48]"
-                    style="
-                      background: linear-gradient(
-                        90deg,
-                        rgba(0, 0, 0, 0.6) -6.21%,
-                        rgb(18, 255, 32) 6.41%,
-                        rgba(0, 0, 0, 0.6) 80.01%
-                      );
-                    "
-                  ></div>
-                  <div
-                    class="absolute bottom-0 left-0 w-[100%] h-[2px] opacity-[0.44]"
-                    style="
-                      background: linear-gradient(
-                        90deg,
-                        rgba(0, 0, 0, 0.6) -6.21%,
-                        rgb(18, 255, 32) 4.41%,
-                        rgba(0, 0, 0, 0.6) 83.01%
-                      );
-                    "
-                  ></div>
-                  <div
-                    class="absolute flex top-0 left-0 right-0 bottom-0 z-[10] items-center gap-3 pl-5"
-                  >
-                    <img
-                      src="https://alpha7s.online/images/home/star.png"
-                      class="w-[24px] h-[24px] object-cover"
-                      alt=""
-                    />
-                    <p class="text-[18px] font-semibold text-white">ไฮไลท์</p>
-                  </div>
-                </div>
+                </GreenToDarkGradientContainer>
               </div>
               <div class="flex items-start h-[439px] gap-8">
                 <div class="w-[30%] h-full">
-                  <Swiper class="h-full" :pagination="paginationConfig">
+                  <Swiper
+                    class="h-full"
+                    :modules="modules"
+                    :navigation="false"
+                    :pagination="paginationConfig"
+                  >
                     <swiper-slide>
                       <img
                         class="w-full h-full rounded-md"
@@ -272,7 +254,7 @@ const paginationConfig = {
                       :number="One"
                     />
                     <GameCardWithNumber
-                      image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                      image="https://cdn.zabbet.com/games/1740548980936-69a8f2cf-d52e-4280-a17f-afa6ac8fd963.jpeg"
                       name="QUEEN OF INCA"
                       is-hot="true"
                       is-new="true"
@@ -280,7 +262,7 @@ const paginationConfig = {
                       :number="Tow"
                     />
                     <GameCardWithNumber
-                      image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                      image="https://cdn.zabbet.com/games/1740451909381-106b6110-23dc-4f17-93d9-e523c2609a49.jpeg"
                       name="QUEEN OF INCA"
                       is-hot="true"
                       is-new="true"
@@ -288,7 +270,7 @@ const paginationConfig = {
                       :number="Three"
                     />
                     <GameCardWithNumber
-                      image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                      image="https://cdn.zabbet.com/games/1740549258636-11c2ada2-b093-459c-af42-2bf6a489872c.jpeg"
                       name="QUEEN OF INCA"
                       is-hot="true"
                       is-new="true"
@@ -331,6 +313,18 @@ const paginationConfig = {
                 </div>
               </div>
             </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://alpha7s.online/images/home/iconreview.png"
+              text="รีวิวจากสมาชิก"
+            />
+            <ReviewSlider class="mt-4" />
+            <button
+              class="w-[300px] h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
+            >
+              View All
+            </button>
           </div>
         </div>
         <div class="w-[25%] sticky h-fit top-[124px]">
