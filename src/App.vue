@@ -1,9 +1,13 @@
 <script setup>
 import Navbar from './components/main/Navbar.vue';
+import Swiper from './components/main/Swiper.vue';
 </script>
 
 <template>
   <Navbar />
+  <div class="mt-[150px]">
+    <Swiper />
+  </div>
 </template>
 
 <style scoped>
