@@ -17,6 +17,10 @@ import Eight from "./components/icons/Eight.vue";
 import GreenToDarkGradientContainer from "./components/atoms/GreenToDarkGradientContainer.vue";
 import ReviewSlider from "./components/main/ReviewSlider.vue";
 import { Autoplay, Pagination } from "swiper/modules";
+import Nine from "./components/icons/Nine.vue";
+import Ten from "./components/icons/Ten.vue";
+import GameCardWithNumberCounter from "./components/atoms/GameCardWithNumberCounter.vue";
+import Accordion from "./components/atoms/Accordion.vue";
 
 const paginationConfig = {
   clickable: true,
@@ -325,6 +329,995 @@ const modules = {
             >
               View All
             </button>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
+              text="TOP 10 เกมส์ใหม่มาแรง"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="6.5"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740548980936-69a8f2cf-d52e-4280-a17f-afa6ac8fd963.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740451909381-106b6110-23dc-4f17-93d9-e523c2609a49.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Three"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740549258636-11c2ada2-b093-459c-af42-2bf6a489872c.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Four"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Five"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Six"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Seven"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Eight"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740548980936-69a8f2cf-d52e-4280-a17f-afa6ac8fd963.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Nine"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740451909381-106b6110-23dc-4f17-93d9-e523c2609a49.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    number-class="bottom-22"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Ten"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
+              text="TOP 10 เกมส์ฮิตค่าย PG Soft"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="6.5"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740548980936-69a8f2cf-d52e-4280-a17f-afa6ac8fd963.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740451909381-106b6110-23dc-4f17-93d9-e523c2609a49.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Three"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740549258636-11c2ada2-b093-459c-af42-2bf6a489872c.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Four"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Five"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Six"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Seven"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Eight"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740548980936-69a8f2cf-d52e-4280-a17f-afa6ac8fd963.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Nine"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/1740451909381-106b6110-23dc-4f17-93d9-e523c2609a49.jpeg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    number-class="bottom-22"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Ten"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
+              text="TOP 10 บาคาร่าสด จากต่างประเทศ"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="6.5"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/sexyd.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    is-hot="true"
+                    is-new="true"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/sag.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    :bg-transparent="true"
+                    is-new="true"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/evt.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    :bg-transparent="true"
+                    :number="Three"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/ebgcasino.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    is-hot="true"
+                    is-new="true"
+                    :number="Four"
+                    :isMaintenance="true"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/biggamecasino.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    :bg-transparent="true"
+                    is-new="true"
+                    :number="Five"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/dg.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    :bg-transparent="true"
+                    :number="Six"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/ppcasino.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    :bg-transparent="true"
+                    :number="Seven"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/wmc.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    :bg-transparent="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Eight"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/ab.png"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    :bg-transparent="true"
+                    is-new="true"
+                    :number="Nine"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Blackjack.jpg"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    is-hot="true"
+                    number-class="bottom-22"
+                    is-new="true"
+                    :number="Ten"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
+              text="ออนไลน์มากที่สุดในขณะนี้"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="7"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/pp.png"
+                    :number="211456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/bng.png"
+                    :number="43456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/ygr.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/kingm.png"
+                    :number="212456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/sexyd.png"
+                    :number="84456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/lali.png"
+                    :number="234456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1736104291853-92a60a5d-1fb7-4cd9-a642-eced7a45eb7c.png"
+              text="ถ่ายทอดสดกีฬา"
+            />
+            <div
+              class="relative mt-[30px] w-full flex justify-center items-center rounded-xl p-[2px] overflow-hidden"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  rgba(0, 0, 0, 0.263) -6.21%,
+                  rgba(18, 255, 32, 0.44) 4.41%,
+                  rgba(0, 0, 0, 0.263) 74.51%,
+                  rgba(0, 0, 0, 0) 100%
+                );
+              "
+            >
+              <div
+                class="w-full h-[200px] rounded-xl"
+                style="
+                  background: linear-gradient(
+                      0deg,
+                      rgba(0, 255, 51, 0.38) 0%,
+                      rgba(0, 255, 51, 0.38) 100%
+                    ),
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.44) 0%,
+                      rgba(0, 0, 0, 0.44) 100%
+                    ),
+                    url('https://alpha7s.online/images/live/bg_live2.jpeg') 50%
+                      center / cover no-repeat lightgray;
+                "
+              ></div>
+              <div
+                class="absolute -top-[1%] w-[740px] h-[600px]"
+                style="
+                  background: radial-gradient(
+                    40% 40% at 50% 50%,
+                    rgb(18, 255, 32) 0%,
+                    rgba(0, 0, 0, 0) 100%
+                  );
+                "
+              ></div>
+              <div
+                class="absolute top-0 left-0 w-full h-full flex justify-center items-center gap-6"
+              >
+                <div
+                  class="w-[54px] h-[54px] rounded-full flex justify-center items-center"
+                  style="
+                    background-color: rgba(0, 0, 0, 0.42);
+                    border: 2px solid rgb(247, 247, 248);
+                  "
+                >
+                  <img
+                    loading="lazy"
+                    class="absolute"
+                    width="80"
+                    height="80"
+                    src="https://alpha7s.online/images/live/sport_type.gif"
+                  />
+                </div>
+                <div class="text-[30px] text-white font-semibold leading-[39px">
+                  There is currently no live broadcast.
+                </div>
+                <div
+                  class="flex justify-center items-center gap-2 h-[36px] bg-[#FF0402] rounded-md cursor-pointer px-[17px] text-nowrap"
+                >
+                  <img
+                    loading="lazy"
+                    src="https://alpha7s.online/images/home/white_live.svg"
+                  />
+                  <div
+                    class="text-sm text-white font-semibold leading-[18.2px] text-nowrap"
+                  >
+                    See the live match schedule
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733801504046-38030e85-7561-4eaa-834c-0d9fb0de25e2.gif"
+              text="TOP 5 กีฬาดัง ค่านํ้าดี!"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="7"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/lali.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/muay.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/sbo.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="Three"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/bcs.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="Four"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/saba.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="Five"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
+              text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
+            />
+            <div class="mt-[30px]">
+              <Swiper
+                slides-per-view="7"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Sicbo.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Pai_Kang.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Thai_Hi_Lo_2.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Three"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Fish_Prawn_Crab_2.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Four"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Coin_Toss.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Five"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Kingmaker_Pok_Deng.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Six"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/Blackjack.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Seven"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/games/KM/EN/7_Up_7_Down.jpg"
+                    name="QUEEN OF INCA"
+                    is-hot="true"
+                    is-new="true"
+                    game-type-image="https://cdn.zabbet.com/providers/set/1_1_badge/fachai.png"
+                    :number="Eight"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://cdn.zabbet.com/0VNF/highlight/1735852948840-f8b3c328-b900-4430-8595-5c1d0e6df273.png"
+              text="ค่ายหวย อันดับ 1"
+            />
+            <div class="mt-[20px]">
+              <Swiper
+                slides-per-view="7"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/lotmw.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="One"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumber
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/dac.png"
+                    name="QUEEN OF INCA"
+                    :bg-transparent="true"
+                    :is-hot="true"
+                    :is-new="false"
+                    :number="Tow"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <GreenToDarkGradientContainer
+              image="https://alpha7s.online/images/home/faq1.png"
+              text="คู่มือนักลงทุน"
+            />
+            <div class="mt-[30px]">
+              <Accordion title="ฝากเงินแบบ โอนผ่านธนาคาร">
+                <div
+                  class="p-4 text-white rounded-b-[4px] text-[14px]"
+                  style="
+                    background: rgb(0, 0, 0);
+                    border-width: 0px 1px 1px;
+                    border-top-style: initial;
+                    border-right-style: solid;
+                    border-bottom-style: solid;
+                    border-left-style: solid;
+                    border-top-color: initial;
+                    border-right-color: rgb(0, 0, 0);
+                    border-bottom-color: rgb(0, 0, 0);
+                    border-left-color: rgb(0, 0, 0);
+                    border-image: initial;
+                  "
+                >
+                  <div>
+                    <div>
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >ไปที่เมนู</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“ฝาก”</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >มุมซ้ายล่าง รูปสัญลักษณ์กระเป๋าเงิน</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938593250-89ca8ca6-1262-4788-b0a7-9a2a311e91ed.png"
+                      alt=""
+                      class="rounded-[8px]"
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >เลือกวิธีฝากเงิน เลือก</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“โอนเงินผ่านธนาคาร”</strong></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938601567-c551d627-bf2d-4b8b-8b26-cc504e9fa071.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <p>
+                        <span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>กรอกจำนวนที่ต้องการฝาก</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >(ขั้นต่ำ : 20 / สูงสุด : 10,000,000)</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938469074-c80bae14-b9ec-4a60-92cb-f765a652110d.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >กด</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>ยืนยัน</strong></span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                        >
+                          ยอดที่ต้องการฝาก</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938505132-615e78b4-68f9-40e5-b3f9-784eaaaaec59.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >หน้ารายละเอียดฝากเงิน จะแจ้ง</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>เลขบัญชีที่ต้องโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >สามารถ</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>คัดลอก</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ได้เลย</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938511168-d749953c-29d5-4be1-a06d-7d47a06fc0c9.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >เมื่อทำรายการโอนผ่านแอปธนาคารแล้ว กด </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>ยืนยันการโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ยอดเงินจะเข้าทันที</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938525565-b7e3cbf9-c9e2-4fa0-9747-50e6c409c996.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="dangerouslySetInnerHTML">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >รายการฝาก</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #38761d;
+                            "
+                            ><strong>สำเร็จ </strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ขอให้เพลิดเพลินกับทุกความสนุกครบวงจร</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938578792-73a9ac80-8db9-4a54-ba96-99d58df7cc92.png"
+                      alt=""
+                      style="object-fit: cover"
+                    />
+                  </div>
+                </div>
+              </Accordion>
+            </div>
           </div>
         </div>
         <div class="w-[25%] sticky h-fit top-[124px]">

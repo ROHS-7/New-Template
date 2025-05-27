@@ -1,6 +1,18 @@
 <template>
   <div class="w-full relative">
     <div class="relative w-[126px] mx-5 mb-3">
+      <div
+        v-if="isMaintenance"
+        class="absolute top-0 left-0 w-full bg-red-500 z-[100] h-full flex flex-col items-center justify-center gap-5 rounded-lg"
+        style="background: #000000b3"
+      >
+        <img
+          class="w-[20%] h-[20%] object-contain"
+          src="https://alpha7s.online/images/game/maintenance.svg"
+          alt=""
+        />
+        <p class="text-center text-white text-sm">Maintenance</p>
+      </div>
       <div class="relative z-10">
         <div style="" class="relative z-0">
           <div
@@ -18,6 +30,7 @@
           </div>
           <!-- <div class="relative z-20"></div> -->
           <div
+            v-if="gameTypeImage"
             class="absolute w-full z-10 pointer-events-none"
             style="zoom: 0.969231; padding-bottom: 142.857%"
           >
@@ -47,7 +60,7 @@
             style="padding-bottom: 142.857%"
           >
             <div class="absolute left-0 right-0 bottom-0 top-0">
-              <div>
+              <div v-if="!bgTransparent">
                 <div
                   class="absolute top-0 left-0 bottom-0 right-0 duration-300 opacity-100"
                 >
@@ -79,7 +92,10 @@
           </div>
         </div>
       </div>
-      <div class="absolute -left-[32px] w-[60px] h-[72px] bottom-5">
+      <div
+        class="absolute -left-[32px] w-[60px] h-[72px] bottom-5"
+        :class="numberClass"
+      >
         <component :is="number" class="text-primary" />
       </div>
     </div>
@@ -106,6 +122,18 @@ export default {
       default: true,
     },
     gameTypeImage: String,
+    numberClass: {
+      type: String,
+      default: "",
+    },
+    bgTransparent: {
+      type: Boolean,
+      default: false,
+    },
+    isMaintenance: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
 </script>
