@@ -1038,7 +1038,7 @@ const modules = {
               image="https://alpha7s.online/images/home/faq1.png"
               text="คู่มือนักลงทุน"
             />
-            <div class="mt-[30px]">
+            <div class="mt-[30px] flex flex-col">
               <Accordion title="ฝากเงินแบบ โอนผ่านธนาคาร">
                 <div
                   class="p-4 text-white rounded-b-[4px] text-[14px]"
@@ -1089,13 +1089,16 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938593250-89ca8ca6-1262-4788-b0a7-9a2a311e91ed.png"
                       alt=""
-                      class="rounded-[8px]"
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
                   <div class="css-1bsqa3n">
-                    <div class="dangerouslySetInnerHTML">
-                      <p>
+                    <div>
+                      <p class="mt-4">
                         <span
                           style="
                             background-color: transparent;
@@ -1116,11 +1119,15 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938601567-c551d627-bf2d-4b8b-8b26-cc504e9fa071.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
                   <div class="css-1bsqa3n">
-                    <div class="dangerouslySetInnerHTML">
+                    <div class="mt-4">
                       <p>
                         <span
                           style="background-color: transparent; color: #ff0000"
@@ -1143,10 +1150,14 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938469074-c80bae14-b9ec-4a60-92cb-f765a652110d.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
-                  <div class="css-1bsqa3n">
+                  <div class="mt-4">
                     <div class="dangerouslySetInnerHTML">
                       <p>
                         <span
@@ -1177,11 +1188,15 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938505132-615e78b4-68f9-40e5-b3f9-784eaaaaec59.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
-                  <div class="css-1bsqa3n">
-                    <div class="dangerouslySetInnerHTML">
+                  <div class="mt-4">
+                    <div class="">
                       <ul>
                         <li>
                           <span
@@ -1230,11 +1245,15 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938511168-d749953c-29d5-4be1-a06d-7d47a06fc0c9.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
-                  <div class="css-1bsqa3n">
-                    <div class="dangerouslySetInnerHTML">
+                  <div class="mt-4">
+                    <div class="">
                       <ul>
                         <li>
                           <span
@@ -1271,11 +1290,15 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938525565-b7e3cbf9-c9e2-4fa0-9747-50e6c409c996.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
-                  <div class="css-1bsqa3n">
-                    <div class="dangerouslySetInnerHTML">
+                  <div class="mt-4">
+                    <div class="">
                       <ul>
                         <li>
                           <span
@@ -1312,12 +1335,631 @@ const modules = {
                     <img
                       src="https://cdn.zabbet.com/0VNF/user-guides/1725938578792-73a9ac80-8db9-4a54-ba96-99d58df7cc92.png"
                       alt=""
-                      style="object-fit: cover"
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                </div>
+              </Accordion>
+              <Accordion title="ฝากเงินแบบ โอนผ่านธนาคาร">
+                <div
+                  class="p-4 text-white rounded-b-[4px] text-[14px]"
+                  style="
+                    background: rgb(0, 0, 0);
+                    border-width: 0px 1px 1px;
+                    border-top-style: initial;
+                    border-right-style: solid;
+                    border-bottom-style: solid;
+                    border-left-style: solid;
+                    border-top-color: initial;
+                    border-right-color: rgb(0, 0, 0);
+                    border-bottom-color: rgb(0, 0, 0);
+                    border-left-color: rgb(0, 0, 0);
+                    border-image: initial;
+                  "
+                >
+                  <div>
+                    <div>
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >ไปที่เมนู</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“ฝาก”</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >มุมซ้ายล่าง รูปสัญลักษณ์กระเป๋าเงิน</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938593250-89ca8ca6-1262-4788-b0a7-9a2a311e91ed.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div>
+                      <p class="mt-4">
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >เลือกวิธีฝากเงิน เลือก</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“โอนเงินผ่านธนาคาร”</strong></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938601567-c551d627-bf2d-4b8b-8b26-cc504e9fa071.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="mt-4">
+                      <p>
+                        <span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>กรอกจำนวนที่ต้องการฝาก</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >(ขั้นต่ำ : 20 / สูงสุด : 10,000,000)</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938469074-c80bae14-b9ec-4a60-92cb-f765a652110d.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="dangerouslySetInnerHTML">
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >กด</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>ยืนยัน</strong></span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                        >
+                          ยอดที่ต้องการฝาก</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938505132-615e78b4-68f9-40e5-b3f9-784eaaaaec59.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >หน้ารายละเอียดฝากเงิน จะแจ้ง</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>เลขบัญชีที่ต้องโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >สามารถ</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>คัดลอก</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ได้เลย</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938511168-d749953c-29d5-4be1-a06d-7d47a06fc0c9.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >เมื่อทำรายการโอนผ่านแอปธนาคารแล้ว กด </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>ยืนยันการโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ยอดเงินจะเข้าทันที</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938525565-b7e3cbf9-c9e2-4fa0-9747-50e6c409c996.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >รายการฝาก</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #38761d;
+                            "
+                            ><strong>สำเร็จ </strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ขอให้เพลิดเพลินกับทุกความสนุกครบวงจร</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938578792-73a9ac80-8db9-4a54-ba96-99d58df7cc92.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                </div>
+              </Accordion>
+              <Accordion title="ฝากเงินแบบ โอนผ่านธนาคาร">
+                <div
+                  class="p-4 text-white rounded-b-[4px] text-[14px]"
+                  style="
+                    background: rgb(0, 0, 0);
+                    border-width: 0px 1px 1px;
+                    border-top-style: initial;
+                    border-right-style: solid;
+                    border-bottom-style: solid;
+                    border-left-style: solid;
+                    border-top-color: initial;
+                    border-right-color: rgb(0, 0, 0);
+                    border-bottom-color: rgb(0, 0, 0);
+                    border-left-color: rgb(0, 0, 0);
+                    border-image: initial;
+                  "
+                >
+                  <div>
+                    <div>
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >ไปที่เมนู</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“ฝาก”</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >มุมซ้ายล่าง รูปสัญลักษณ์กระเป๋าเงิน</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938593250-89ca8ca6-1262-4788-b0a7-9a2a311e91ed.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div>
+                      <p class="mt-4">
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >เลือกวิธีฝากเงิน เลือก</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                          ><strong> </strong></span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>“โอนเงินผ่านธนาคาร”</strong></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938601567-c551d627-bf2d-4b8b-8b26-cc504e9fa071.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <div class="mt-4">
+                      <p>
+                        <span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>กรอกจำนวนที่ต้องการฝาก</strong></span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >(ขั้นต่ำ : 20 / สูงสุด : 10,000,000)</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938469074-c80bae14-b9ec-4a60-92cb-f765a652110d.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="dangerouslySetInnerHTML">
+                      <p>
+                        <span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                          >กด</span
+                        ><span
+                          style="background-color: transparent; color: #000000"
+                        >
+                        </span
+                        ><span
+                          style="background-color: transparent; color: #ff0000"
+                          ><strong>ยืนยัน</strong></span
+                        ><span
+                          style="
+                            background-color: transparent;
+                            color: hsl(0, 0%, 100%);
+                          "
+                        >
+                          ยอดที่ต้องการฝาก</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938505132-615e78b4-68f9-40e5-b3f9-784eaaaaec59.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >หน้ารายละเอียดฝากเงิน จะแจ้ง</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>เลขบัญชีที่ต้องโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >สามารถ</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>คัดลอก</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ได้เลย</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938511168-d749953c-29d5-4be1-a06d-7d47a06fc0c9.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >เมื่อทำรายการโอนผ่านแอปธนาคารแล้ว กด </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #ff0000;
+                            "
+                            ><strong>ยืนยันการโอน</strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ยอดเงินจะเข้าทันที</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938525565-b7e3cbf9-c9e2-4fa0-9747-50e6c409c996.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="">
+                      <ul>
+                        <li>
+                          <span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >รายการฝาก</span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #000000;
+                            "
+                          >
+                          </span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: #38761d;
+                            "
+                            ><strong>สำเร็จ </strong></span
+                          ><span
+                            style="
+                              background-color: transparent;
+                              color: hsl(0, 0%, 100%);
+                            "
+                            >ขอให้เพลิดเพลินกับทุกความสนุกครบวงจร</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="css-1bsqa3n">
+                    <img
+                      src="https://cdn.zabbet.com/0VNF/user-guides/1725938578792-73a9ac80-8db9-4a54-ba96-99d58df7cc92.png"
+                      alt=""
+                      class="rounded-[8px] mt-2 border-[1px]"
+                      style="
+                        object-fit: cover;
+                        border-color: rgba(255, 255, 255, 0.2);
+                      "
                     />
                   </div>
                 </div>
               </Accordion>
             </div>
+            <button
+              class="w-[300px] h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
+            >
+              View All
+            </button>
           </div>
         </div>
         <div class="w-[25%] sticky h-fit top-[124px]">
@@ -2099,6 +2741,436 @@ const modules = {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[30px]">
+        <h1 class="text-xl font-semibold text-white pl-2">Our Alliance</h1>
+        <div class="flex items-center gap-[20px] mt-6">
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/evoplay.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/cq9.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/jili.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/playstar.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/joker.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/ebet.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/popk.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/evoplay.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/cq9.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/jili.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/playstar.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/joker.png"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-[20px] justify-center mt-6">
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/cq9.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/jili.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/ebet.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/popk.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/evoplay.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/cq9.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/jili.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/playstar.png"
+            />
+          </div>
+          <div class="w-[107px] py-[7px] rounded-[5px]">
+            <img
+              class="h-[10px] mx-auto"
+              src="https://alpha7s.online/images/alliance/joker.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-[30px]">
+        <div class="grid grid-cols-8 mt-3 gap-6">
+          <div>
+            <p class="text-[#7CA9B7] font-semibold text-sm">About</p>
+          </div>
+          <div class="col-span-3">
+            <p class="text-[#7CA9B7] font-normal text-sm">
+              <span class="font-semibold">Licenses and certificates</span>
+              <span>"(Guaranteed authentic licensed game)"</span>
+            </p>
+            <div class="mt-3 flex gap-6 items-center">
+              <img
+                loading="lazy"
+                class="max-h-[32px]"
+                alt="Image 1"
+                src="https://alpha7s.online/images/footer/GC-icon%202.png"
+              /><img
+                loading="lazy"
+                class="max-h-[32px]"
+                alt="Image 2"
+                src="https://alpha7s.online/images/footer/iTech.png"
+              /><img
+                loading="lazy"
+                class="max-h-[32px]"
+                alt="Image 3"
+                src="https://alpha7s.online/images/footer/GamingLab.png"
+              /><img
+                loading="lazy"
+                class="max-h-[32px]"
+                alt="Image 4"
+                src="https://alpha7s.online/images/footer/BBM-Cert.png"
+              /><img
+                loading="lazy"
+                class="max-h-[32px]"
+                alt="Image 5"
+                src="https://alpha7s.online/images/footer/Iovation.png"
+              />
+            </div>
+            <div class="flex mt-8 gap-12">
+              <div>
+                <div class="text-[#7CA9B7] font-semibold text-sm">
+                  Support and security by
+                </div>
+                <div class="mt-3 flex gap-6 items-center">
+                  <img
+                    loading="lazy"
+                    class="max-h-[32px]"
+                    alt="Image 1"
+                    src="https://alpha7s.online/images/footer/GO%20DADDY.png"
+                  /><img
+                    loading="lazy"
+                    class="max-h-[32px]"
+                    alt="Image 2"
+                    src="https://alpha7s.online/images/footer/Group%2048102721.png"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="text-[#7CA9B7] font-semibold text-sm">
+                  Responsible for betting
+                </div>
+                <div class="mt-3 flex gap-6 items-center">
+                  <img
+                    loading="lazy"
+                    class="max-h-[32px]"
+                    alt="Image 1"
+                    src="https://alpha7s.online/images/footer/18.png"
+                  /><img
+                    loading="lazy"
+                    class="max-h-[32px]"
+                    alt="Image 2"
+                    src="https://alpha7s.online/images/footer/gamecare.png"
+                  /><img
+                    loading="lazy"
+                    class="max-h-[32px]"
+                    alt="Image 3"
+                    src="https://alpha7s.online/images/footer/be-gamble-aware.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-[#7CA9B7] font-semibold text-sm">Games</p>
+            <ul class="mt-3 flex flex-col gap-3">
+              <li class="text-base font-normal text-secondary">
+                <a>Casino</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Slot</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Fishing</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Sports</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Cards</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Lottery</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[#7CA9B7] font-semibold text-sm">Information</p>
+            <ul class="mt-3 flex flex-col gap-3">
+              <li class="text-base font-normal text-secondary">
+                <a>Promotions</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>News</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Event</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Sports</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>VIP Member Level</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Network Income</a>
+              </li>
+              <li class="text-base font-normal text-secondary">
+                <a>Commision Income</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-2 flex flex-col ml-10">
+            <p class="text-[#7CA9B7] font-semibold text-sm">Contact</p>
+            <div class="flex items-center gap-3 mt-3">
+              <img
+                class="w-[32px]"
+                src="https://cdn.zabbet.com/0VNF/lobby_settings/da78a3be-1ece-44a8-99d2-d7f823dbcffa.png"
+              />
+              <img
+                class="w-[32px]"
+                src="https://cdn.zabbet.com/0VNF/lobby_settings/dad788f8-6441-4f80-a0c4-bb39325532e9.png"
+                alt=""
+              />
+
+              <img
+                class="w-[32px]"
+                src="https://cdn.zabbet.com/0VNF/lobby_settings/f6a5f318-531d-4cec-a8b3-5e4c5816577c.webp"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[1px] my-6"
+          style="background: rgb(112, 138, 115)"
+        ></div>
+        <div>
+          <p
+            class="font-semibold text-center"
+            style="color: rgb(112, 138, 115)"
+          >
+            Payment Method
+          </p>
+          <div class="mt-3 flex flex-wrap gap-4 items-center justify-center">
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/BBL.png"
+                alt="BBL"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/KBANK.png"
+                alt="KBANK"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/KTB.png"
+                alt="KTB"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/TTB.png"
+                alt="TTB"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/SCB.png"
+                alt="SCB"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/BAY.png"
+                alt="BAY"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/KKP.png"
+                alt="KKP"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/CIMBT.png"
+                alt="CIMBT"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/UOBT.png"
+                alt="TISCO"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/TCD.png"
+                alt="UOBT"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/LHFG.png"
+                alt="TCD"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/BAAC.png"
+                alt="LHFG"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/EXIM.png"
+                alt="BAAC"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/GSB.png"
+                alt="EXIM"
+              />
+            </div>
+            <div class="relative inline-block max-h-[32px] rounded-full">
+              <img
+                loading="lazy"
+                class="max-h-[32px] rounded-full brightness-75"
+                src="https://alpha7s.online/images/banks/TH/GHB.png"
+                alt="GSB"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 items-end mt-12">
+          <img
+            loading="lazy"
+            class="max-h-[25px]"
+            src="https://cdn.zabbet.com/0VNF/lobby_settings/8e561d6d-916e-4647-a060-769b671aaa4a.png"
+            alt="logo"
+          />
+          <div class="font-normal text-sm text-white opacity-50">
+            Copyright © alpha7s.com, All Rights Reserved.
           </div>
         </div>
       </div>
