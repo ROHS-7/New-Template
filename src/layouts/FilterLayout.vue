@@ -142,15 +142,31 @@
                 <div
                   v-for="gameType in gameTypes"
                   :key="gameType.type"
-                  @click="currentGameType = gameType.type"
-                  class="w-full h-14 rounded-xl cursor-pointer flex justify-center items-center border relative"
-                  style="
-                    background: linear-gradient(
-                      155deg,
-                      rgb(0, 0, 0),
-                      rgb(0, 0, 0) 30%
-                    );
+                  @click="
+                    () => {
+                      if (currentGameType == gameType.type) {
+                        currentGameType = null;
+                        return;
+                      } else {
+                        currentGameType = gameType.type;
+                      }
+                    }
                   "
+                  class="w-full h-14 rounded-xl cursor-pointer flex justify-center items-center border relative"
+                  :style="{
+                    background:
+                      currentGameType == gameType.type
+                        ? 'linear-gradient(rgb(51, 153, 51) 0%, rgb(0, 0, 0) 100%)'
+                        : 'linear-gradient(155deg, rgb(0, 0, 0), rgb(0, 0, 0) 30%)',
+                    border:
+                      currentGameType == gameType.type
+                        ? '1px solid rgb(129, 254, 140)'
+                        : 'none',
+                    boxShadow:
+                      currentGameType == gameType.type
+                        ? 'rgba(220, 220, 220, 0.55) 0px 0px 6px 0px'
+                        : 'none',
+                  }"
                 >
                   <div
                     class="w-full h-full absolute top-0.5 left-[2.5%] rounded-[10px]"
