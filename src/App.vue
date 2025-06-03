@@ -20,7 +20,9 @@ onMounted(() => {
 <template>
   <Container>
     <component :is="isMobile ? MobileLayout : DesktopLayout">
-      <RouterView />
+      <transition name="slide" mode="out-in">
+        <router-view :key="$route.fullPath" />
+      </transition>
     </component>
   </Container>
 </template>
@@ -37,5 +39,18 @@ onMounted(() => {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.slide-enter-from {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.slide-leave-to {
+  transform: translateY(-100px);
+  opacity: 0;
 }
 </style>
