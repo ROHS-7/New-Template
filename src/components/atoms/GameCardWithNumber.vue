@@ -32,7 +32,7 @@
           <div
             v-if="gameTypeImage"
             class="absolute w-full z-10 pointer-events-none"
-            style="zoom: 0.969231; padding-bottom: 142.857%"
+            style="padding-bottom: 142.857%"
           >
             <div
               class="absolute left-0 right-0 bottom-0 h-[15%] rounded-b-md pointer-events-none bg-gradient-to-r from-black/40 via-black/40 to-black/0"

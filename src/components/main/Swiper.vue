@@ -8,6 +8,7 @@
       :navigation="navigation"
       :autoplay="autoplay"
       :loop="loop"
+      :breakpoints="breakpoints"
       :space-between="spaceBetween"
     >
       <slot></slot>
@@ -41,9 +42,9 @@ export default {
     },
     pagination: {
       type: Object,
-      default: {
+      default: () => ({
         clickable: true,
-      },
+      }),
     },
     autoplay: {
       type: Object,
@@ -63,6 +64,10 @@ export default {
     navigation: {
       type: [Boolean, Object],
       default: true,
+    },
+    breakpoints: {
+      type: Object,
+      default: {},
     },
   },
 };

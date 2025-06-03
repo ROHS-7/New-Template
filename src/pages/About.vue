@@ -1,7 +1,5 @@
 <template>
-  <div class="max-w-[1440px] md:px-0 px-3 mx-auto">
-    <slot></slot>
-  </div>
+  <div class="text-3xl font-bold text-white">About Page</div>
 </template>
 <script>
 export default {};
