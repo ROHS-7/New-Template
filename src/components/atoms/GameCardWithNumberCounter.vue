@@ -61,7 +61,7 @@
           <div class="font-semibold text-[12px]">
             <CountUp
               style="color: rgb(25, 254, 22)"
-              :key="count"
+              :key="number"
               :end-val="number"
               >{{ new Intl.NumberFormat().format(number) }}</CountUp
             >

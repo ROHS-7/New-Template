@@ -1,4 +1,8 @@
 export const GameCardsSwiperBreakPoints = {
+    '500': {
+    slidesPerView: 2.8,
+    spaceBetween: 20,
+    },
     '640': {
     slidesPerView: 4.5,
     spaceBetween: 20,

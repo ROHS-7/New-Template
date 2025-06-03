@@ -2,8 +2,8 @@
   <div>
     <div class="flex mt-[30px] xl:gap-5 gap-2 xl:px-0 px-3">
       <div class="lg:w-[75%] w-full">
-        <Marquee />
-        <div class="grid mt-[30px] xl:grid-cols-3 grid-cols-2 gap-5">
+        <Marquee class="md:flex hidden" />
+        <div class="md:grid hidden mt-[30px] xl:grid-cols-3 grid-cols-2 gap-5">
           <PromotionCard
             image="https://cdn.zabbet.com/0VNF/lobby_settings/26f5c813-c080-4876-ba84-55561875e23f.png"
             title="โปรโมชั่นพิเศษ"
@@ -21,7 +21,7 @@
           />
         </div>
         <div
-          class="w-full mt-8 p-[2px] rounded-xl"
+          class="w-full md:block hidden mt-8 p-[2px] rounded-xl"
           style="
             background: linear-gradient(
               to right,
@@ -170,14 +170,14 @@
             </div>
           </div>
         </div>
-        <div class="mt-[30px]">
+        <div class="md:mt-[30px]">
           <GreenToDarkGradientContainer
             image="https://alpha7s.online/images/home/iconreview.png"
             text="รีวิวจากสมาชิก"
           />
-          <ReviewSlider class="mt-4" />
+          <ReviewSlider class="md:mt-4 mt-3" />
           <button
-            class="w-[300px] h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
+            class="md:w-[300px] md:shadow-none shadow-primary w-[150px] h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
           >
             View All
           </button>
@@ -187,9 +187,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
             text="TOP 10 เกมส์ใหม่มาแรง"
           />
-          <div class="mt-[30px]">
+          <div class="md:mt-[30px] mt-[10px]">
             <Swiper
-              slides-per-view="6.5"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -306,9 +306,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
             text="TOP 10 เกมส์ฮิตค่าย PG Soft"
           />
-          <div class="mt-[30px]">
+          <div class="md:mt-[30px] mt-[10px]">
             <Swiper
-              slides-per-view="6.5"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -425,9 +425,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
             text="TOP 10 บาคาร่าสด จากต่างประเทศ"
           />
-          <div class="mt-[30px]">
+          <div class="md:mt-[30px] mt-[10px]">
             <Swiper
-              slides-per-view="6.5"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -546,65 +546,102 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
             text="ออนไลน์มากที่สุดในขณะนี้"
           />
-          <div class="mt-[30px]">
-            <Swiper
-              slides-per-view="7"
-              space-between="20"
-              :modules="[]"
-              :centered-slides="false"
-              :navigation="false"
-              :loop="false"
-              :breakpoints="GameCardsSwiperBreakPoints"
-            >
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
-                  :number="24456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/pp.png"
-                  :number="211456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/bng.png"
-                  :number="43456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/ygr.png"
-                  :number="24456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/kingm.png"
-                  :number="212456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/sexyd.png"
-                  :number="84456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/lali.png"
-                  :number="234456"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <GameCardWithNumberCounter
-                  image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
-                  :number="24456"
-                />
-              </SwiperSlide>
-            </Swiper>
+          <div class="md:mt-[30px] mt-[10px]">
+            <div class="md:block hidden">
+              <Swiper
+                slides-per-view="2.3"
+                space-between="20"
+                :modules="[]"
+                :centered-slides="false"
+                :navigation="false"
+                :loop="false"
+                :breakpoints="GameCardsSwiperBreakPoints"
+              >
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/pp.png"
+                    :number="211456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/bng.png"
+                    :number="43456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/ygr.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/kingm.png"
+                    :number="212456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/sexyd.png"
+                    :number="84456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/lali.png"
+                    :number="234456"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <GameCardWithNumberCounter
+                    image="https://cdn.zabbet.com/providers/set/1_1_v/jl.png"
+                    :number="24456"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+
+            <div class="md:hidden grid grid-cols-2 gap-2">
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/pgt.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/jl.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/pp.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/bng.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/ygr.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/kingm.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/sexyd.png"
+                number="24456"
+              />
+              <MobileGameCardWithNumberCounter
+                image="https://cdn.zabbet.com/providers/set/1_1_h/lali.png"
+                number="24456"
+              />
+            </div>
           </div>
         </div>
         <div class="mt-[30px]">
@@ -625,7 +662,7 @@
             "
           >
             <div
-              class="w-full h-[200px] rounded-xl"
+              class="w-full md:h-[200px] h-[150px] rounded-xl"
               style="
                 background: linear-gradient(
                     0deg,
@@ -652,10 +689,10 @@
               "
             ></div>
             <div
-              class="absolute top-0 left-0 w-full h-full flex justify-center items-center gap-6"
+              class="absolute top-0 md:px-0 px-3 left-0 w-full h-full flex justify-center items-center md:gap-6 gap-2"
             >
               <div
-                class="w-[54px] h-[54px] rounded-full flex justify-center items-center"
+                class="md:w-[54px] w-[35px] h-[35px] shrink-0 md:h-[54px] rounded-full flex justify-center items-center"
                 style="
                   background-color: rgba(0, 0, 0, 0.42);
                   border: 2px solid rgb(247, 247, 248);
@@ -663,13 +700,13 @@
               >
                 <img
                   loading="lazy"
-                  class="absolute"
-                  width="80"
-                  height="80"
+                  class="absolute md:w-[80px] md:h-[80px] w-[30px] h-[30px]"
                   src="https://alpha7s.online/images/live/sport_type.gif"
                 />
               </div>
-              <div class="text-[30px] text-white font-semibold leading-[39px">
+              <div
+                class="md:text-[30px] text-white text-[13px] font-semibold md:leading-[39px]"
+              >
                 There is currently no live broadcast.
               </div>
               <div
@@ -677,10 +714,11 @@
               >
                 <img
                   loading="lazy"
+                  class="md:block hidden"
                   src="https://alpha7s.online/images/home/white_live.svg"
                 />
                 <div
-                  class="text-sm text-white font-semibold leading-[18.2px] text-nowrap"
+                  class="md:text-sm text-[10px] text-white md:font-semibold leading-[18.2px] text-nowrap"
                 >
                   See the live match schedule
                 </div>
@@ -693,9 +731,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733801504046-38030e85-7561-4eaa-834c-0d9fb0de25e2.gif"
             text="TOP 5 กีฬาดัง ค่านํ้าดี!"
           />
-          <div class="mt-[30px]">
+          <div class="md:mt-[30px] mt-[10px]">
             <Swiper
-              slides-per-view="7"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -761,9 +799,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
             text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
           />
-          <div class="mt-[30px]">
+          <div class="md:mt-[30px] mt-[10px]">
             <Swiper
-              slides-per-view="7"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -859,9 +897,9 @@
             image="https://cdn.zabbet.com/0VNF/highlight/1735852948840-f8b3c328-b900-4430-8595-5c1d0e6df273.png"
             text="ค่ายหวย อันดับ 1"
           />
-          <div class="mt-[20px]">
+          <div class="md:mt-[20px] mt-[10px]">
             <Swiper
-              slides-per-view="7"
+              slides-per-view="2.3"
               space-between="20"
               :modules="[]"
               :centered-slides="false"
@@ -2530,433 +2568,6 @@
         </div>
       </div>
     </div>
-    <div class="mt-[30px] xl:px-0 px-3">
-      <h1 class="text-xl font-semibold text-white pl-2">Our Alliance</h1>
-      <div class="flex items-center gap-[20px] mt-6">
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/evoplay.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/cq9.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/jili.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/playstar.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/joker.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/ebet.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/popk.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/evoplay.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/cq9.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/jili.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/playstar.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/joker.png"
-          />
-        </div>
-      </div>
-      <div class="flex items-center gap-[20px] justify-center mt-6">
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/cq9.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/jili.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/ebet.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/popk.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/evoplay.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/cq9.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/jili.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/playstar.png"
-          />
-        </div>
-        <div class="w-[107px] py-[7px] rounded-[5px]">
-          <img
-            class="h-[10px] mx-auto"
-            src="https://alpha7s.online/images/alliance/joker.png"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="mt-[30px] xl:px-0 px-3">
-      <div class="grid md:grid-cols-8 grid-cols-1 mt-3 gap-6">
-        <div>
-          <p class="text-[#7CA9B7] font-semibold text-sm">About</p>
-        </div>
-        <div class="xl:col-span-3 lg:col-span-4 md:col-span-6">
-          <p class="text-[#7CA9B7] font-normal text-sm">
-            <span class="font-semibold">Licenses and certificates</span>
-            <span>"(Guaranteed authentic licensed game)"</span>
-          </p>
-          <div class="mt-3 flex gap-6 items-center">
-            <img
-              loading="lazy"
-              class="max-h-[32px]"
-              alt="Image 1"
-              src="https://alpha7s.online/images/footer/GC-icon%202.png"
-            /><img
-              loading="lazy"
-              class="max-h-[32px]"
-              alt="Image 2"
-              src="https://alpha7s.online/images/footer/iTech.png"
-            /><img
-              loading="lazy"
-              class="max-h-[32px]"
-              alt="Image 3"
-              src="https://alpha7s.online/images/footer/GamingLab.png"
-            /><img
-              loading="lazy"
-              class="max-h-[32px]"
-              alt="Image 4"
-              src="https://alpha7s.online/images/footer/BBM-Cert.png"
-            /><img
-              loading="lazy"
-              class="max-h-[32px]"
-              alt="Image 5"
-              src="https://alpha7s.online/images/footer/Iovation.png"
-            />
-          </div>
-          <div class="flex mt-8 gap-12">
-            <div>
-              <div class="text-[#7CA9B7] font-semibold text-sm">
-                Support and security by
-              </div>
-              <div class="mt-3 flex gap-6 items-center">
-                <img
-                  loading="lazy"
-                  class="max-h-[32px]"
-                  alt="Image 1"
-                  src="https://alpha7s.online/images/footer/GO%20DADDY.png"
-                /><img
-                  loading="lazy"
-                  class="max-h-[32px]"
-                  alt="Image 2"
-                  src="https://alpha7s.online/images/footer/Group%2048102721.png"
-                />
-              </div>
-            </div>
-            <div>
-              <div class="text-[#7CA9B7] font-semibold text-sm">
-                Responsible for betting
-              </div>
-              <div class="mt-3 flex gap-6 items-center">
-                <img
-                  loading="lazy"
-                  class="max-h-[32px]"
-                  alt="Image 1"
-                  src="https://alpha7s.online/images/footer/18.png"
-                /><img
-                  loading="lazy"
-                  class="max-h-[32px]"
-                  alt="Image 2"
-                  src="https://alpha7s.online/images/footer/gamecare.png"
-                /><img
-                  loading="lazy"
-                  class="max-h-[32px]"
-                  alt="Image 3"
-                  src="https://alpha7s.online/images/footer/be-gamble-aware.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p class="text-[#7CA9B7] font-semibold text-sm">Games</p>
-          <ul class="mt-3 flex flex-col gap-3">
-            <li class="text-base font-normal text-secondary">
-              <a>Casino</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Slot</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Fishing</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Sports</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Cards</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Lottery</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-[#7CA9B7] font-semibold text-sm">Information</p>
-          <ul class="mt-3 flex flex-col gap-3">
-            <li class="text-base font-normal text-secondary">
-              <a>Promotions</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>News</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Event</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Sports</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>VIP Member Level</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Network Income</a>
-            </li>
-            <li class="text-base font-normal text-secondary">
-              <a>Commision Income</a>
-            </li>
-          </ul>
-        </div>
-        <div class="md:col-span-2 flex flex-col ml-10">
-          <p class="text-[#7CA9B7] font-semibold text-sm">Contact</p>
-          <div class="flex items-center gap-3 mt-3">
-            <img
-              class="w-[32px]"
-              src="https://cdn.zabbet.com/0VNF/lobby_settings/da78a3be-1ece-44a8-99d2-d7f823dbcffa.png"
-            />
-            <img
-              class="w-[32px]"
-              src="https://cdn.zabbet.com/0VNF/lobby_settings/dad788f8-6441-4f80-a0c4-bb39325532e9.png"
-              alt=""
-            />
-
-            <img
-              class="w-[32px]"
-              src="https://cdn.zabbet.com/0VNF/lobby_settings/f6a5f318-531d-4cec-a8b3-5e4c5816577c.webp"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="w-full h-[1px] my-6"
-        style="background: rgb(112, 138, 115)"
-      ></div>
-      <div>
-        <p class="font-semibold text-center" style="color: rgb(112, 138, 115)">
-          Payment Method
-        </p>
-        <div class="mt-3 flex flex-wrap gap-4 items-center justify-center">
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/BBL.png"
-              alt="BBL"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/KBANK.png"
-              alt="KBANK"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/KTB.png"
-              alt="KTB"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/TTB.png"
-              alt="TTB"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/SCB.png"
-              alt="SCB"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/BAY.png"
-              alt="BAY"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/KKP.png"
-              alt="KKP"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/CIMBT.png"
-              alt="CIMBT"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/UOBT.png"
-              alt="TISCO"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/TCD.png"
-              alt="UOBT"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/LHFG.png"
-              alt="TCD"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/BAAC.png"
-              alt="LHFG"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/EXIM.png"
-              alt="BAAC"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/GSB.png"
-              alt="EXIM"
-            />
-          </div>
-          <div class="relative inline-block max-h-[32px] rounded-full">
-            <img
-              loading="lazy"
-              class="max-h-[32px] rounded-full brightness-75"
-              src="https://alpha7s.online/images/banks/TH/GHB.png"
-              alt="GSB"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-5 items-end mt-12">
-        <img
-          loading="lazy"
-          class="max-h-[25px]"
-          src="https://cdn.zabbet.com/0VNF/lobby_settings/8e561d6d-916e-4647-a060-769b671aaa4a.png"
-          alt="logo"
-        />
-        <div class="font-normal text-sm text-white opacity-50">
-          Copyright © alpha7s.com, All Rights Reserved.
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script setup>
@@ -2981,6 +2592,7 @@ import GameCardWithNumberCounter from "../components/atoms/GameCardWithNumberCou
 import Accordion from "../components/atoms/Accordion.vue";
 import { GameCardsSwiperBreakPoints } from "../libs/GameCardsSwiperBreakPoints";
 import { Autoplay, Pagination } from "swiper/modules";
+import MobileGameCardWithNumberCounter from "../components/atoms/MobileGameCardWithNumberCounter.vue";
 
 const paginationConfig = {
   clickable: true,

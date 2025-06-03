@@ -93,7 +93,7 @@
         </div>
       </div>
       <div
-        class="absolute -left-[32px] w-[60px] h-[72px] bottom-5"
+        class="absolute md:-left-[32px] -left-[25px] w-[60px] h-[72px] bottom-5"
         :class="numberClass"
       >
         <component :is="number" class="text-primary" />

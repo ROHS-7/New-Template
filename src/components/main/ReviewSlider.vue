@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <Swiper
-      :slides-per-view="4"
+      :slides-per-view="1"
       :space-between="30"
       :centered-slides="false"
       :modules="modules"
