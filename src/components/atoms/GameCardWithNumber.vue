@@ -1,6 +1,9 @@
 <template>
   <div class="w-full relative">
-    <div class="relative w-[126px] mx-5 mb-3">
+    <div
+      class="relative w-[126px] mx-5 mb-3"
+      :class="{ '!w-[85%]': isWidthFull }"
+    >
       <div
         v-if="isMaintenance"
         class="absolute top-0 left-0 w-full bg-red-500 z-[100] h-full flex flex-col items-center justify-center gap-5 rounded-lg"
@@ -131,6 +134,10 @@ export default {
       default: false,
     },
     isMaintenance: {
+      type: Boolean,
+      default: false,
+    },
+    isWidthFull: {
       type: Boolean,
       default: false,
     },

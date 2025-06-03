@@ -17,7 +17,7 @@
         class="w-5 h-5 -translate-y-[5px] rotate-[9deg]"
       />
     </div>
-    <div class="text-[8px] font-extrabold mt-[1px]">HOT</div>
+    <div class="text-[8px] text-white font-extrabold mt-[1px]">HOT</div>
   </div>
 </template>
 <script></script>

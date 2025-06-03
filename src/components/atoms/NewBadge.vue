@@ -15,7 +15,9 @@
         fill="white"
       ></path>
     </svg>
-    <div class="text-[9.5px] font-extrabold italic mt-[1px]">NEW</div>
+    <div class="text-[9.5px] text-white font-extrabold italic mt-[1px]">
+      NEW
+    </div>
   </div>
 </template>
 <script>

@@ -125,6 +125,31 @@
             <p class="font-bold text-[16px] text-white">Casino</p>
           </div>
         </RouterLink>
+        <RouterLink to="/slot" class="relative">
+          <div
+            :class="{ 'opacity-100': currentRoute === 'slot' }"
+            class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
+            style="
+              width: calc(100% - 20px);
+              box-shadow: rgb(76, 226, 84) 0px -4px 9px 0px;
+              background-color: rgb(125, 255, 133);
+            "
+          ></div>
+          <div
+            class="h-[49px] relative p-3 z-[10] flex items-center justify-center gap-2"
+            style="
+              backdrop-filter: blur(4px);
+              background: radial-gradient(
+                164.23% 100% at 50% 0%,
+                rgba(35, 38, 44, 0) 0%,
+                rgba(114, 125, 146, 0.11) 100%
+              );
+            "
+          >
+            <img src="/Slot.png" alt="" class="w-[42px]" />
+            <p class="font-bold text-[16px] text-white">Slot</p>
+          </div>
+        </RouterLink>
         <RouterLink to="/fishing" class="relative">
           <div
             :class="{ 'opacity-100': currentRoute === 'fishing' }"

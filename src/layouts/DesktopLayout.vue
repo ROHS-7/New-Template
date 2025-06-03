@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="mt-[150px]">
+  <div class="mt-[110px] overflow-y-hidden">
     <slot />
   </div>
   <div class="mt-[30px] xl:px-0 px-3">

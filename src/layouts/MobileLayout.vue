@@ -10,7 +10,10 @@
   <div>
     <Marquee />
   </div>
-  <div class="my-3 flex gap-3 overflow-scroll mb-2 pb-2">
+  <div
+    class="my-3 flex gap-3 overflow-scroll mb-2 pb-2"
+    :class="{ hidden: currentRoute !== '/' }"
+  >
     <div
       class="flex items-center px-5 transition-all w-fit gap-2 rounded-md"
       v-for="route in routes"

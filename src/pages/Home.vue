@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HomeSlider />
     <div class="flex mt-[30px] xl:gap-5 gap-2 xl:px-0 px-3">
       <div class="lg:w-[75%] w-full">
         <Marquee class="md:flex hidden" />
@@ -2573,6 +2574,7 @@
 <script setup>
 import PromotionCard from "../components/atoms/PromotionCard.vue";
 import Marquee from "../components/main/Marquee.vue";
+import HomeSlider from "../components/main/HomeSlider.vue";
 import { SwiperSlide } from "swiper/vue";
 import Swiper from "../components/main/Swiper.vue";
 import GameCardWithNumber from "../components/atoms/GameCardWithNumber.vue";

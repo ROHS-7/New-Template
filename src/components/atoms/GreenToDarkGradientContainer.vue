@@ -25,10 +25,19 @@
     <div
       class="absolute flex top-0 left-0 right-0 bottom-0 z-[10] items-center gap-3 pl-5"
     >
-      <img :src="image" class="w-[24px] h-[24px] object-cover" alt="" />
-      <p class="md:text-[18px] text-[14px] font-semibold text-white">
+      <img
+        v-if="image"
+        :src="image"
+        class="w-[24px] h-[24px] object-cover"
+        alt=""
+      />
+      <p
+        v-if="text"
+        class="md:text-[18px] text-[14px] font-semibold text-white"
+      >
         {{ text }}
       </p>
+      <slot />
     </div>
   </div>
 </template>
