@@ -74,7 +74,7 @@
             alt=""
           />
         </div>
-        <div class="flex gap-5 mt-[60px] px-5">
+        <div class="flex gap-5 mt-[30px] px-5">
           <div
             class="w-[345px] pb-7 bg-black rounded-[20px] h-fit sticky text-center overflow-y-auto top-[120px]"
           >
