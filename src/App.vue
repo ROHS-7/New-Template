@@ -20,8 +20,8 @@ onMounted(() => {
 <template>
   <Container>
     <component :is="isMobile ? MobileLayout : DesktopLayout">
-      <transition name="slide" mode="out-in">
-        <router-view :key="$route.fullPath" />
+      <transition name="slide" mode="out">
+        <router-view :is="Component" :key="`${$route.fullPath}-${isMobile}`" />
       </transition>
     </component>
   </Container>

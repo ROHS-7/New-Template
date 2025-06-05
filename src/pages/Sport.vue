@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:block hidden">
     <FilterLayout
       logo-image="https://alpha7s.online/images/game/slot/logo_slot.webp"
       bg-image="https://alpha7s.online/images/game/slot/bg_slot.webp"
@@ -101,9 +101,44 @@
       </div>
     </FilterLayout>
   </div>
+  <div>
+    <div class="flex items-end mt-[10px] gap-1 text-white">
+      <p class="text-lg font-bold">Sport</p>
+      <p class="text-[10px] font-semibold pb-1">(11 Game NPH)</p>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <MobileGameCard
+        class="col-span-2"
+        image="https://cdn.zabbet.com/providers/set/1_1_h/sbo.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        class="col-span-2"
+        image="https://cdn.zabbet.com/providers/set/1_1_l/lali.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/bcs.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/muay.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/muay.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/muay.png"
+        :is-new="true"
+      />
+    </div>
+  </div>
 </template>
 <script setup>
 import GameCardWithNumber from "../components/atoms/GameCardWithNumber.vue";
+import MobileGameCard from "../components/atoms/MobileGameCard.vue";
 import FilterLayout from "../layouts/FilterLayout.vue";
 const gameTypes = [
   {

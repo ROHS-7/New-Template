@@ -1,5 +1,6 @@
 <template>
   <FilterLayout
+    class="md:block hidden"
     bg-image="https://alpha7s.online/images/game/casino/bg_casino.webp"
     logo-image="https://alpha7s.online/images/game/casino/logo_casino.webp"
   >
@@ -12,7 +13,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -21,7 +21,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -30,7 +29,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -39,7 +37,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -48,7 +45,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -57,7 +53,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -66,7 +61,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -75,7 +69,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -84,7 +77,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -93,7 +85,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -102,7 +93,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -111,7 +101,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -120,7 +109,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -129,7 +117,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -138,7 +125,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -147,7 +133,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -156,7 +141,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -165,7 +149,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -174,7 +157,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -183,7 +165,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -192,7 +173,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -201,7 +181,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -210,7 +189,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -219,7 +197,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -228,7 +205,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -237,7 +213,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -246,7 +221,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -255,7 +229,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -264,7 +237,6 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
       <GameCardWithNumber
         :is-width-full="true"
@@ -273,13 +245,60 @@
         :bg-transparent="true"
         is-hot="true"
         is-new="true"
-        :number="One"
       />
     </div>
   </FilterLayout>
+  <div class="md:hidden block">
+    <div class="flex items-end mt-[10px] gap-1 text-white">
+      <p class="text-lg font-bold">Casino</p>
+      <p class="text-[10px] font-semibold pb-1">(11 Game NPH)</p>
+    </div>
+
+    <div class="mt-2 grid grid-cols-2 gap-2">
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/dg.png"
+        :is-hot="true"
+        class="col-span-2"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_l/sexyd.png"
+        class="col-span-2"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/providers/set/1_1_h/yeebet.png"
+        :is-new="true"
+      />
+    </div>
+  </div>
 </template>
 <script setup>
 import GameCardWithNumber from "../components/atoms/GameCardWithNumber.vue";
 import FilterLayout from "../layouts/FilterLayout.vue";
+import NewBadge from "../components/atoms/NewBadge.vue";
+import MobileGameCard from "../components/atoms/MobileGameCard.vue";
 </script>
 <style lang=""></style>

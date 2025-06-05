@@ -39,7 +39,7 @@
         ></div>
       </div>
     </div>
-    <div class="relative z-[100] overflow-hidden">
+    <div class="relative z-[100]">
       <div
         class="w-full h-[383px] relative flex items-center overflow-hidden translate-y-0 scale-100 justify-center"
       >
@@ -82,7 +82,7 @@
         class="flex translate-y-[-200px] relative xl:gap-5 gap-2 mt-[30px] px-5"
       >
         <div
-          class="w-[345px] pb-7 bg-black rounded-[20px] h-fit sticky text-center overflow-y-auto top-[120px]"
+          class="w-[345px] pb-7 bg-black rounded-[20px] h-fit sticky text-center overflow-y-auto top-[320px]"
         >
           <div
             class="p-5 w-full h-[60px] absolute rounded-[20px]"

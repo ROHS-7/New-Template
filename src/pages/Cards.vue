@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:block hidden">
     <FilterLayout
       logo-image="https://alpha7s.online/images/game/slot/logo_slot.webp"
       bg-image="https://alpha7s.online/images/game/slot/bg_slot.webp"
@@ -101,9 +101,44 @@
       </div>
     </FilterLayout>
   </div>
+  <div>
+    <div class="flex items-end mt-[10px] gap-1 text-white">
+      <p class="text-lg font-bold">Cards</p>
+      <p class="text-[10px] font-semibold pb-1">(11 Game NPH)</p>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <MobileGameCard
+        class="col-span-2"
+        image="https://cdn.zabbet.com/providers/set/1_1_h/kingm.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        class="col-span-2"
+        image="https://cdn.zabbet.com/providers/set/1_1_l/amb.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/gamecard/1696220882369-08f56f11-f604-4f39-a75f-98e9d185447f.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/gamecard/1696220889989-c5077b35-50f5-4b4b-88df-c1cf454b6ddc.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/gamecard/1696220889989-c5077b35-50f5-4b4b-88df-c1cf454b6ddc.png"
+        :is-new="true"
+      />
+      <MobileGameCard
+        image="https://cdn.zabbet.com/gamecard/1696220889989-c5077b35-50f5-4b4b-88df-c1cf454b6ddc.png"
+        :is-new="true"
+      />
+    </div>
+  </div>
 </template>
 <script setup>
 import GameCardWithNumber from "../components/atoms/GameCardWithNumber.vue";
+import MobileGameCard from "../components/atoms/MobileGameCard.vue";
 import FilterLayout from "../layouts/FilterLayout.vue";
 const gameTypes = [
   {

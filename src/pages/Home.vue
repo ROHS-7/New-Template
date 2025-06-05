@@ -1,9 +1,8 @@
 <template>
   <div>
-    <HomeSlider />
-    <div class="flex mt-[30px] gap-5 px-0">
+    <HomeSlider class="md:block hidden" />
+    <div class="flex mt-[10px] gap-5 px-0">
       <div class="md:w-[75%] w-full">
-        <Marquee class="flex" />
         <div class="md:grid hidden mt-[30px] grid-cols-3 gap-5">
           <PromotionCard
             image="https://cdn.zabbet.com/0VNF/lobby_settings/26f5c813-c080-4876-ba84-55561875e23f.png"
@@ -798,7 +797,7 @@
         <div class="mt-[30px]">
           <GreenToDarkGradientContainer
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
-          text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
+            text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
           />
           <div class="md:mt-[30px] mt-[10px]">
             <Swiper
