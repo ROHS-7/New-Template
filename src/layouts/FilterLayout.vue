@@ -3,13 +3,13 @@
     <div class="relative">
       <img
         :src="bgImage"
-        class="min-h-[600px] absolute top-0 -z-[1] translate-y-0 w-full object-cover duration-100 transition-all"
+        class="min-h-[600px] fixed top-0 -z-[1] translate-y-0 w-full object-cover duration-100 transition-all"
         :class="{ 'translate-y-[-500%]': currentGameType != null }"
       />
       <img
         v-for="gameType in gameTypes"
         :key="gameType.type"
-        class="min-h-[600px] absolute top-0 -z-[1] w-full translate-y-[-500%] object-cover duration-1000 transition-all"
+        class="min-h-[600px] fixed top-0 -z-[1] w-full translate-y-[-500%] object-cover duration-1000 transition-all"
         :class="{ '!translate-y-0': currentGameType === gameType.type }"
         :src="gameType.bgImage"
         alt=""
@@ -18,7 +18,7 @@
         v-for="gameType in gameTypes"
         :key="gameType.type"
         :src="gameType.gameCharacterImage"
-        class="w-[383px] h-[383px] absolute top-10 right-0 object-contain z-[100] transition-all duration-1000"
+        class="w-[383px] h-[383px] fixed top-10 right-0 object-contain z-[100] transition-all duration-1000"
         :class="{
           '!translate-y-[0] scale-90 translate-x-0':
             currentGameType === gameType.type,
@@ -28,7 +28,7 @@
         alt=""
       />
       <div
-        class="absolute w-full h-full z-[50] top-0 left-0 opacity-60"
+        class="fixed w-full h-full z-[50] top-0 left-0 opacity-60"
         style="
           background: linear-gradient(
             106deg,
@@ -38,7 +38,7 @@
         "
       ></div>
       <div
-        class="absolute w-full z-[50] h-full top-0 left-0"
+        class="fixed w-full z-[50] h-full top-0 left-0"
         style="
           background: linear-gradient(
             182deg,

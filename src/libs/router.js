@@ -7,6 +7,7 @@ import Fishing from '../pages/Fishing.vue';
 import Sport from '../pages/Sport.vue';
 import Cards from '../pages/Cards.vue';
 import Lottery from '../pages/Lottery.vue';
+import Live from '../pages/Live.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -15,8 +16,8 @@ const routes = [
   {path : '/fishing',component : Fishing},
   {path : '/sport', component : Sport},
   {path : '/cards',component : Cards},
-  {path : "/lottery", component : Lottery}
-
+  {path : "/lottery", component : Lottery},
+  {path : '/live',component  : Live}
 ]
 
 const router = createRouter({
