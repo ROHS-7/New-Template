@@ -74,8 +74,10 @@
           </div>
         </div>
       </div>
-      <div class="md:flex hidden items-center gap-4 justify-start">
-        <RouterLink to="/" class="relative">
+      <div
+        class="md:flex hidden overflow-scroll items-center gap-4 justify-start"
+      >
+        <RouterLink to="/" class="relative shrink-0">
           <div
             class="absolute z-[1] mx-auto h-2 left-[10px] -bottom-1 opacity-0"
             :class="{ 'opacity-100': currentRoute === '' }"
@@ -100,7 +102,7 @@
             <p class="font-bold text-[16px] text-white">Home</p>
           </div>
         </RouterLink>
-        <RouterLink to="/casino" class="relative">
+        <RouterLink to="/casino" class="relative shrink-0">
           <div
             :class="{ 'opacity-100': currentRoute === 'casino' }"
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
@@ -125,7 +127,7 @@
             <p class="font-bold text-[16px] text-white">Casino</p>
           </div>
         </RouterLink>
-        <RouterLink to="/slot" class="relative">
+        <RouterLink to="/slot" class="relative shrink-0">
           <div
             :class="{ 'opacity-100': currentRoute === 'slot' }"
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
@@ -150,7 +152,7 @@
             <p class="font-bold text-[16px] text-white">Slot</p>
           </div>
         </RouterLink>
-        <RouterLink to="/fishing" class="relative">
+        <RouterLink to="/fishing" class="relative shrink-0">
           <div
             :class="{ 'opacity-100': currentRoute === 'fishing' }"
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
@@ -175,7 +177,7 @@
             <p class="font-bold text-[16px] text-white">Fishing</p>
           </div>
         </RouterLink>
-        <RouterLink to="/sport" class="relative">
+        <RouterLink to="/sport" class="relative shrink-0">
           <div
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
             :class="{ 'opacity-100': currentRoute === 'sport' }"
@@ -200,7 +202,7 @@
             <p class="font-bold text-[16px] text-white">Sport</p>
           </div>
         </RouterLink>
-        <RouterLink to="/cards" class="relative">
+        <RouterLink to="/cards" class="relative shrink-0">
           <div
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
             :class="{ 'opacity-100': currentRoute === 'cards' }"
@@ -225,7 +227,7 @@
             <p class="font-bold text-[16px] text-white">Cards</p>
           </div>
         </RouterLink>
-        <RouterLink class="relative" to="/lottery">
+        <RouterLink class="relative shrink-0" to="/lottery">
           <div
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
             :class="{ 'opacity-100': currentRoute === 'lottery' }"
@@ -250,7 +252,7 @@
             <p class="font-bold text-[16px] text-white">Lottery</p>
           </div>
         </RouterLink>
-        <RouterLink class="relative" to="/live">
+        <RouterLink class="relative shrink-0" to="/live">
           <div
             class="absolute opacity-0 z-[1] mx-auto h-2 left-[10px] -bottom-1"
             :class="{ 'opacity-100': currentRoute === 'live' }"

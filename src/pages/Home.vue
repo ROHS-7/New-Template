@@ -1,10 +1,10 @@
 <template>
   <div>
     <HomeSlider />
-    <div class="flex mt-[30px] xl:gap-5 gap-2 xl:px-0 px-3">
-      <div class="lg:w-[75%] w-full">
-        <Marquee class="md:flex hidden" />
-        <div class="md:grid hidden mt-[30px] xl:grid-cols-3 grid-cols-2 gap-5">
+    <div class="flex mt-[30px] gap-5 px-0">
+      <div class="md:w-[75%] w-full">
+        <Marquee class="flex" />
+        <div class="md:grid hidden mt-[30px] grid-cols-3 gap-5">
           <PromotionCard
             image="https://cdn.zabbet.com/0VNF/lobby_settings/26f5c813-c080-4876-ba84-55561875e23f.png"
             title="โปรโมชั่นพิเศษ"
@@ -63,7 +63,7 @@
               </GreenToDarkGradientContainer>
             </div>
             <div class="flex items-start h-[439px] gap-8">
-              <div class="w-[30%] xl:block hidden h-full">
+              <div class="w-[30%] md:block hidden h-full">
                 <Swiper
                   class="h-full"
                   :modules="modules"
@@ -100,7 +100,7 @@
                   </swiper-slide>
                 </Swiper>
               </div>
-              <div class="xl:w-[70%] w-full">
+              <div class="w-[70%]">
                 <div class="grid grid-cols-4 gap-2">
                   <GameCardWithNumber
                     image="https://cdn.zabbet.com/games/1737006098341-03501b47-3887-4b07-aeac-57f9abb6c1c0.jpeg"
@@ -178,7 +178,7 @@
           />
           <ReviewSlider class="md:mt-4 mt-3" />
           <button
-            class="md:w-[300px] md:shadow-none shadow-primary w-[150px] h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
+            class="w-[300px] md:shadow-none shadow-primary h-[40px] border-[1px] mx-auto block mt-4 text-white text-sm font-bold rounded-lg border-primary bg-black"
           >
             View All
           </button>
@@ -798,7 +798,7 @@
         <div class="mt-[30px]">
           <GreenToDarkGradientContainer
             image="https://cdn.zabbet.com/0VNF/highlight/1733772517644-6d543a67-fa80-4940-bff1-f54cfbeb9020.gif"
-            text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
+          text="TOP 8  เกมส์ไทยพื้นบ้าน ยอดนิยม!"
           />
           <div class="md:mt-[30px] mt-[10px]">
             <Swiper
@@ -1797,7 +1797,7 @@
           </button>
         </div>
       </div>
-      <div class="w-[25%] lg:block hidden sticky h-fit top-[124px]">
+      <div class="w-[25%] md:block hidden sticky h-fit top-[124px]">
         <div class="px-[10px] py-[12px] relative">
           <div
             class="absolute left-0 right-0 top-0 h-[150px]"
